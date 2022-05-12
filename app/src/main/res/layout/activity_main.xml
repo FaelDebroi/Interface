@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Textos Password/Plain text" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="senha"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="364dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Cores  e CheckBox" />
+
+            <CheckBox
+                android:id="@+id/vermelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vermelho" />
+
+            <CheckBox
+                android:id="@+id/azul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Azul" />
+
+            <CheckBox
+                android:id="@+id/verde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="verde" />
+
+            <ScrollView
+                android:layout_width="377dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cores"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:background="#777777"
+                        android:padding="30dp"
+                        android:text="Cores"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sexo | RadioGrup e RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/rbMasc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/rbFemi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tipoSexo"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Tipo Sexo" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enviar"
+                android:text="Enviar" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="limpar"
+                android:text="Limpar" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
